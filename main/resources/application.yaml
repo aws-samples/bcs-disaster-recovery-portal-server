@@ -1,0 +1,18 @@
+server:
+  # Beanstalk proxy listens on 5000
+  port: 5000
+
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+cloudendure:
+  enabled: true
+  api:
+    url: https://console.cloudendure.com/api/latest
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
